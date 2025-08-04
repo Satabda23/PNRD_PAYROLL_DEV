@@ -3,6 +3,7 @@ import { ConfigModule } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { EmployeeDetailsTableModule } from './employee-details-table/employee-details-table.module';
 import { DistrictsTableModule } from './districts-table/districts-table.module';
+import { EmployeeAllowancesTypeModule } from './employee-allowances-type/employee-allowances-type.module';
 
 @Module({
   imports: [
@@ -21,6 +22,7 @@ import { DistrictsTableModule } from './districts-table/districts-table.module';
     }),
     EmployeeDetailsTableModule,
     DistrictsTableModule,
+    EmployeeAllowancesTypeModule,
   ],
 })
 export class AppModule {}
