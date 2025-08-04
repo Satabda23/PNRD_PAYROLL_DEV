@@ -9,8 +9,6 @@ export class DistrictsTable {
   @Column()
   district_name: string;
 
-
-
   @OneToMany(() => EmployeeDetailsTable, (employee) => employee.district)
   employees: EmployeeDetailsTable[];
 
