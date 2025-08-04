@@ -6,6 +6,8 @@ import { EmployeeDetailsTableService } from './employee-details-table.service';
 export class EmployeeDetailsTableController {
   constructor(private readonly employeeService: EmployeeDetailsTableService) {}
 
+
+  //We will have the apis here
   @Get()
   findAll(
     @Query('page') page: number = 1,
